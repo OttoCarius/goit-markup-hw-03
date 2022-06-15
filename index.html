@@ -19,9 +19,9 @@
 <body>
     <!--Шапка-->
 <header class="header">
-    <div class="container">
- <nav class="header-nav">
-    <a href="./index.html" class="logo"> <span class="Web">Web</span>Studio </a>
+    <div class="container div-header">
+        <a href="./index.html" class="logo"> <span class="Web">Web</span>Studio </a>
+    <nav class="header-nav">
     <ul class="list">
         <li> <a href="./index.html" class="current">Студия</a></li>
         <li> <a href="./portfolio.html">Портфолио</a></li>
@@ -39,12 +39,15 @@
 <main>
     <!--Кнопка-->
     <section class="first">
+        <div class="container">
         <h1 class="h1-first">Эффективные решения для вашего бизнеса</h1>
          <button type="button" class="button-first">Заказать услугу</button>
+        </div>
     </section>
     
 <!-- Особенности -->
-<section>
+<section class="section">
+    <div class="container">
     <h2 class="h2-hide">Особенности</h2> 
     <ul class="feature-list">
         <li>
@@ -62,10 +65,12 @@
             <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
         </li>
     </ul>
+    </div>
 </section>
 
 <!--Чем занимаемся-->
-<section>
+<section class="section work">
+    <div class="container">
     <h2 class="section-title">Чем мы занимаемся</h2>
     <ul class="work-list">
         <li>
@@ -77,10 +82,12 @@
             <img src="./images/box3.jpg" alt=" планшет_с_рисунком" width="370">
         </li>
     </ul>
+    </div>
 </section>
 
 <!--Команда-->
-<section class="our-team">
+<section class="our-team section">
+    <div class="container">
     <h2 class="section-title">Наша команда</h2>
     <ul class="team-list">
         <li>
@@ -102,18 +109,21 @@
         <p class="job-title">UI Designer</p>
     </li>
     </ul>
+    </div>
 </section>
 </main>
 
 <footer class="footer">
+    <div class="container">
     <a href="./index.html" class="logo-footer"> <span class="Web">Web</span>Studio </a>
-    <address class="address">г. Киев, пр-т Леси Украинки, 26
+    <address class="address"><p>г. Киев, пр-т Леси Украинки, 26</p>
        
-    <ul class="address-list">
+    <ul class="ul-list">
         <li> <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
         <li> <a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
       </ul>
     </address>
+    </div>
 
     </footer>
     
