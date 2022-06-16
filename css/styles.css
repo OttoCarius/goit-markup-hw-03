@@ -338,10 +338,11 @@ color:var(--colorPrimary)
 }
 
 .list-projects{display: flex;
-flex-wrap: wrap;}
+flex-wrap: wrap;
+}
 
-.text-picture{padding-top: 20px;
-    padding-bottom: 20px;
+/* .text-picture{padding-top: 20px; */
+.text-picture {padding: 20px 24px;
     padding-inline: 24px;
     border: 1px solid #eeeeee;}
 
@@ -352,7 +353,8 @@ flex-wrap: wrap;}
  .list-projects>li:nth-child(3n + 1) {
      margin-left: 0px;}
 
-.list-projects img {display: block;}
+.list-projects img {display: block;
+ }
 
 
     
@@ -361,7 +363,8 @@ flex-wrap: wrap;}
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-bottom: 4px; }
+    margin-bottom: 4px; 
+}
 
 .projects-info{ color: var(--colorTertiary);
     font-weight: 400;
