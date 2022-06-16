@@ -198,8 +198,15 @@ ul {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    
     margin-bottom: 50px;
 }
+
+.work-list{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .work-list img{display: block;}
 
@@ -208,10 +215,9 @@ ul {
 
  .our-team{
      background-color: var(--bgcolorquaternary);
-     padding-top: 0px;
+    }
 
 
- }
  .team-list .job-title{color: var(--colorTertiary);
         font-size: 16px;
         line-height: 1.19;
@@ -221,6 +227,10 @@ ul {
      background-color: var(--bgColorPrimary);
  }
 
+ .team-list{display: flex;
+ justify-content: space-between;
+}
+
  .name{ 
      font-weight: 500;
     font-size: 16px;
@@ -228,6 +238,17 @@ ul {
     text-align: center;
     margin-bottom: 10px;
 }
+
+.pictures{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.sect-li img {display: block ;}
+.sect-li {background: var(--bgColorPrimary);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+} 
 
 /* Footer */
 
@@ -283,33 +304,73 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
+
+    padding: 6px 22px;
+    border-radius: 4px;
+    }
+
+.button-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
 }
+
 
 .button-categories:hover,
 .button-categories:focus {
     color:var(--colorHero);
     background-color: var(--btnbgColor);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     }
+
+.lists-li:not(:first-child) {
+    margin-left: 8px;
+}
 
     /* < !-- Портфолио Проэктов --> */
-    .button-categories{font-family: inherit;}
+
+
+.button-categories{font-family: inherit;
+color:var(--colorPrimary)
+}
+
+.list-projects{display: flex;
+flex-wrap: wrap;}
+
+.text-picture{padding-top: 20px;
+    padding-bottom: 20px;
+    padding-inline: 24px;
+    border: 1px solid #eeeeee;}
+
+
+.list-projects>li:nth-last-child(-n + 3) {
+    margin-bottom: 0px;}
+
+ .list-projects>li:nth-child(3n + 1) {
+     margin-left: 0px;}
+
+.list-projects img {display: block;}
+
+
     
-    .projects-title{color: var(--colorPrimary);
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
-        margin-bottom: 4px;
+.projects-title{color: var(--colorPrimary);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px; }
+
+.projects-info{ color: var(--colorTertiary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
     }
 
-    .projects-info{ color: var(--colorTertiary);
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.88;
-        letter-spacing: 0.03em;
-    }
+ .list-projects a {
+    text-decoration: none;}
 
-        .list-projects a {
-            text-decoration: none;
-        }
-                
+
+.list-projects>li {
+    margin-bottom: 30px;
+    margin-left: 30px;}
