@@ -68,10 +68,19 @@ ul {
  .contact-list {font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;}
+    letter-spacing: 0.02em;
+ }
+
+.list {
+    display: flex;}
+
+.list-li:not(:last-child) {margin-right: 50px;}
+
 
 .list a {color: var(--colorLogoPrimary);
         text-decoration: none;
+        display: block;
+        padding: 32px 0;
     }
         
 .list a:hover,
@@ -84,9 +93,17 @@ ul {
         }
 
         /* Контактные адреса */
+
+.contact-list{
+     display: flex;
+     margin-left: auto;
+}
+
+
 .contacts {color: var(--colorTertiary);
     text-decoration: none;
 }
+.contact-list>li:not(:first-child) {margin-left: 50px;}
 
 .contacts:hover,
 .contacts:focus {color:var(--colorSecondary) 
@@ -97,20 +114,19 @@ ul {
 .first {background-color: var(--bgColorSecondary);
     padding-top: 200px;
     text-align: center;
-    max-width: 1600px;
     margin: auto auto;
 
 }
 .h1-first {color: var(--colorHero);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    max-width: 696px;
-    margin: auto;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        max-width: 696px;
+        margin: auto;
+        margin-bottom: 30px;
 }
 
 .button-first  {color: var(--btncolorPrimary);
@@ -122,7 +138,13 @@ ul {
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
-    margin-bottom: 210px;
+    margin-bottom: 200px;
+
+    min-width: 200px;
+    padding: 10px 32px;
+
+    border-radius: 4px;
+
     }
         
 
@@ -151,7 +173,13 @@ ul {
     line-height: 1.71;
     text-align: left;
 }
-.feature-list{display: flex; justify-content: space-evenly;}
+.feature-list{ display: flex; 
+    justify-content: space-evenly;}
+
+.feature-list li {width: 270px}
+
+
+.feature-list>li:not(:first-child){margin-left: 30px;}
 
 .title {
     font-weight: 700;
