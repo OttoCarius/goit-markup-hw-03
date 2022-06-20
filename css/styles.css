@@ -14,6 +14,8 @@
     --btncolorPrimary:#FFFFFF;
     --btnbgColor:#2196F3;
     --btnbgColorHov: #188CE8;
+
+    
 }
 
 body {
@@ -22,6 +24,8 @@ body {
     background-color:var(--bgColorPrimary);
     letter-spacing: 0.03em;
 }
+
+
 
 h1,
 h2,
@@ -81,7 +85,7 @@ ul {
         text-decoration: none;
         display: block;
         padding: 32px 0;
-    }
+}
         
 .list a:hover,
 .list a:focus {
@@ -104,11 +108,13 @@ ul {
 
 .contacts {color: var(--colorTertiary);
     text-decoration: none;
-}
+ }
+
 .contact-list>li:not(:first-child) {margin-left: 30px;}
 
 .contacts:hover,
-.contacts:focus {color:var(--colorSecondary) 
+.contacts:focus {color:var(--colorSecondary);
+
 } 
 
 .mail-icon{margin-right: 10px;
@@ -152,8 +158,10 @@ ul {
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
+    justify-content: center;
 
-    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
 
     min-width: 200px;
     padding: 10px 32px;
